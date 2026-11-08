@@ -1,1 +1,72 @@
-<button onClick="https://drive.google.com/drive/folders/1_LBm0Lacohdllify_HR3g8Rr6QE-i9bj?usp=drive_link"> click here</button>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Drive</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: #243b55;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            padding: 14px 30px;
+            background: #4285F4;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2865c7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Welcome!</h2>
+
+        <p>Click below to access the Google Drive folder.</p>
+
+        <button onclick="openDrive()">
+            Open Google Drive
+        </button>
+
+    </div>
+
+    <script>
+        function openDrive() {
+            window.location.href =
+            "https://drive.google.com/drive/folders/1_LBm0Lacohdllify_HR3g8Rr6QE-i9bj?usp=drive_link";
+        }
+    </script>
+
+</body>
+</html>
